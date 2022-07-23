@@ -114,7 +114,7 @@ fun SwipeButtonPreview() {
                 icon = {
                     Icon(
                         imageVector = Icons.Filled.ArrowForward,
-                        modifier = Modifier.size(60.dp),
+                        modifier = Modifier.size(56.dp),
                         contentDescription = null
                     )
                 },
