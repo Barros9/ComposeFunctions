@@ -23,19 +23,20 @@ private val DarkColorPalette = darkColors(
     secondary = Orange300,
     secondaryVariant = Orange300
 )
+
 @Composable
 fun ComposeFunctionsTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
-    val colors = if (darkTheme) {
+    val palette = if (darkTheme) {
         DarkColorPalette
     } else {
         LightColorPalette
     }
 
     MaterialTheme(
-        colors = colors.switch(),
+        colors = palette.switch(),
         typography = Typography,
         shapes = Shapes,
         content = content
