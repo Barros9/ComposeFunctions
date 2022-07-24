@@ -8,7 +8,6 @@ import com.barros.composefunctions.domain.model.Theme
 import com.barros.composefunctions.domain.usecases.GetThemePreferencesUseCase
 import com.barros.composefunctions.domain.usecases.GetThemeUpdateUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -23,7 +22,7 @@ class MainViewModel @Inject constructor(
 
     init {
         viewModelScope.launch {
-            getThemeUpdateUseCase().collectLatest { _theme.value = it }
+            getThemeUpdateUseCase().collect { _theme.value = it }
         }
     }
 

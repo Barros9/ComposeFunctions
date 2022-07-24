@@ -1,6 +1,7 @@
 package com.barros.composefunctions.ui.screens.home
 
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.*
@@ -67,6 +68,7 @@ fun HomeContent(
                                     imageVector = Icons.Filled.LightMode,
                                     contentDescription = null
                                 )
+                                Spacer(modifier = Modifier.padding(8.dp))
                                 Text(stringResource(R.string.light_mode))
                             }
                         }
@@ -84,6 +86,7 @@ fun HomeContent(
                                     imageVector = Icons.Filled.DarkMode,
                                     contentDescription = null
                                 )
+                                Spacer(modifier = Modifier.padding(8.dp))
                                 Text(stringResource(R.string.dark_mode))
                             }
                         }
