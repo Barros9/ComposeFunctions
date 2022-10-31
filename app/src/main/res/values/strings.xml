@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Compose Functions</string>
+    <string name="back">Back</string>
+    <string name="swipe_button">Swipe button</string>
+    <string name="light_mode">Light mode</string>
+    <string name="dark_mode">Dark mode</string>
+</resources>
